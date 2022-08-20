@@ -54,7 +54,7 @@ body {
 .company-title {
   visibility: hidden;
 }
-.button-title {
+.portfolio-title {
   display: none;
 }
 
@@ -714,21 +714,21 @@ body {
 /* PORTFOLIO */
 
 /* Section Button  */
-.site-button {
+.portfolio__button-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.button-items {
+.button__item {
   margin-right: 10px;
 }
 
-.button-items:last-child {
+.button__item:last-child {
   margin-right: 0px;
 }
 
-.button {
+.portfolio__button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -744,8 +744,8 @@ body {
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.portfolio__button:hover,
+.portfolio__button:focus {
   background: var(--accent-color);
   color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -889,29 +889,29 @@ body {
 }
 
 /*  Client Block  */
-.client-list {
+.portfolio__client-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.page-block {
+.portfolio__client-item {
   background: var(--white-color);
   text-decoration: none;
 }
 
-.page-block:hover,
-.page-block:focus-within {
+.portfolio__client-item:hover,
+.portfolio__client-item:focus-within {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-link {
+.portfolio__link {
   transition: var(--anim-shadow-slow);
 }
 
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio__link:hover,
+.portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -930,16 +930,15 @@ body {
   position: absolute;
   display: inline-block;
   content: '';
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.page-block:hover .portfolio-overlay {
+.portfolio__client-item:hover .portfolio-overlay {
   transform: translateX(0);
   opacity: 1;
 }
@@ -957,14 +956,14 @@ body {
   padding: 20px 24px;
 }
 
-.page-title {
+.portfolio__client-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
   margin-bottom: 5px;
 }
-.page-text {
+.portfolio__client-text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--secondary-text-color);
