@@ -11,8 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/main.min..css">
 </head>
 
 <body>
@@ -52,6 +51,7 @@
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero__btn" type="button" data-modal-open><span class="hero__order">Замовити
             послугу</span></button>
+        <!-- Список преймуществ -->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button class="close-btn" type="button" data-modal-close>
@@ -85,7 +85,7 @@
                 </svg>
               </div>
               <div class="form-block">
-                <label class="comment-label" for="comment">Коментар</label>
+                <label class="form__comment" for="comment">Коментар</label>
                 <textarea class="comment" name="comment" id="comment" rows="9" placeholder="Введіть текст"></textarea>
               </div>
               <div class="form-block__chek">
@@ -110,7 +110,7 @@
     <section class="section company">
       <div class="container">
         <!-- Скрытый заголовок -->
-        <h2 class="company-title">Описание преимуществ компании</h2>
+        <h2 class="visually-hidden">Описание преимуществ компании</h2>
         <!-- Преимущества -->
         <ul class="company-list list">
           <li class="company-list__item">
@@ -334,7 +334,7 @@
       </div>
     </section>
 
-    <!-- Секция постоянные клиенты -->
+    <!-- Клиенты -->
     <section class="section client">
       <div class="container">
         <h2 class="client__title">Постійні клієнти</h2>
